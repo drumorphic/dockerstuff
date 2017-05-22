@@ -1,0 +1,5 @@
+create-realm --realm Partners
+create-realm --realm Staff
+
+add-svc-realm -s OAuth2Provider -D ./OAuth2Provider.txt -e /
+create-xacml  -X ./oauth2-policy.xml -e /
